@@ -1,0 +1,43 @@
+
+
+1. sudo apt update
+
+2. sudo apt upgrade
+
+3. sudo apt install mysql-server
+
+4. sudo service mysql start
+
+5. sudo mysql_secure_installation
+
+6. sudo mysql -u root -p
+
+Basic MySQL Usage:
+
+CREATE DATABASE my_sql_practice;
+
+USE my_sql_practice;
+
+CREATE TABLE Employees (ID INT PRIMARY KEY,Name VARCHAR(100),Department VARCHAR(50),Salary DECIMAL(10, 2));
+
+INSERT INTO Employees (ID, Name, Department, Salary) VALUES (1, 'Gopi Chappidi', 'BCP', 75000.00);
+
+SELECT * FROM Employees;
+
+ELECT Name, Salary FROM Employees WHERE Department = 'BCP';
+
+UPDATE Employees SET Salary = 80000.00 WHERE ID = 1;
+
+INSERT INTO Employees (ID, Name, Department, Salary) VALUES (1, 'Gopi', 'MCP', 75000.00);
+
+
+DELETE FROM Employees WHERE ID = 2;
+
+SHOW TABLES;
+
+DROP TABLE Employees;
+
+SHOW DATABASES;
+
+DROP DATABASE database_name;
+
