@@ -86,3 +86,7 @@ DROP DATABASE database_name;
 -- To run sample .sql file from terminal:
 
 -- sudo mysql -u root -p < basic_setup.sql
+
+-- Import my_sql_practic database as .sql and same .sql run file from terminal:
+-- sudo mysqldump -u root -p my_sql_practic > my_sql_practic.sql   -- import
+-- sudo mysql -u root -p sample_db < sample_db.sql                 -- run on terminal and its overide the data into the database.
