@@ -41,3 +41,14 @@ SHOW DATABASES;
 
 DROP DATABASE database_name;
 
+exit;
+
+sudo service mysql status
+
+sudo service mysql start
+
+sudo mysqldump -u root -p my_sql_practic > my_sql_practic.sql
+
+mysqldump -h 127.0.0.1 -u root -p my_sql_practic > my_sql_practic.sql
+
+mysqldump -h localhost -P 3306 -u root -p my_sql_practic > my_sql_practic.sql
