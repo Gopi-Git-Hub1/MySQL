@@ -56,3 +56,29 @@ SHOW DATABASES;
 
 -- Drop a database (replace 'database_name' with your actual database name)
 DROP DATABASE database_name;
+
+-- Exit MySQL shell
+-- This command is used inside the MySQL shell to exit the session
+-- Example:
+-- mysql> exit;
+
+-- Check MySQL service status
+-- This command checks whether the MySQL server is running
+-- sudo service mysql status;
+
+-- Start MySQL service
+-- This command starts the MySQL server if it's not already running
+-- sudo service mysql start;
+
+-- Backup database using mysqldump (default socket)
+-- This command attempts to dump the database 'my_sql_practic' into a file
+-- Note: Ensure the database name is correct (likely 'my_sql_practice')
+-- sudo mysqldump -u root -p my_sql_practic > my_sql_practic.sql;
+
+-- Backup using TCP/IP (useful in WSL environments)
+-- This forces mysqldump to use TCP/IP instead of Unix socket
+-- mysqldump -h 127.0.0.1 -u root -p my_sql_practic > my_sql_practic.sql;
+
+-- Backup with explicit host and port
+-- This is helpful when connecting to MySQL server running on Windows from WSL
+-- mysqldump -h localhost -P 3306 -u root -p my_sql_practic > my_sql_practic.sql;
