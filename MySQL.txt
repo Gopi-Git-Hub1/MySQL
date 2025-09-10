@@ -52,3 +52,7 @@ sudo mysqldump -u root -p my_sql_practic > my_sql_practic.sql
 mysqldump -h 127.0.0.1 -u root -p my_sql_practic > my_sql_practic.sql
 
 mysqldump -h localhost -P 3306 -u root -p my_sql_practic > my_sql_practic.sql
+
+run sample .sql file from terminal:
+
+sudo mysql -u root -p < basic_setup.sql

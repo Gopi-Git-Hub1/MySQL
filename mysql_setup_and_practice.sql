@@ -82,3 +82,7 @@ DROP DATABASE database_name;
 -- Backup with explicit host and port
 -- This is helpful when connecting to MySQL server running on Windows from WSL
 -- mysqldump -h localhost -P 3306 -u root -p my_sql_practic > my_sql_practic.sql;
+
+-- To run sample .sql file from terminal:
+
+-- sudo mysql -u root -p < basic_setup.sql
